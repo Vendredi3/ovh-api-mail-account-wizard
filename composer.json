@@ -1,0 +1,7 @@
+{
+    "name": "Mail account generator",
+    "description": "Création de compte emails ovh en masse",
+    "require": {
+        "ovh/ovh": "dev-master"
+    }
+}
