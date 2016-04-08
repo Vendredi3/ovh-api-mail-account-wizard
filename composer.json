@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "ovh/ovh": "master"
+        "ovh/ovh": "2.0.1"
     }
 }
