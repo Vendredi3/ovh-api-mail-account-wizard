@@ -27,13 +27,13 @@ require_once( __DIR__ .'/config.php');
         Gestion de comptes Email et redirections <?php echo $domain;?> en masse (API OVH)
       </p>
       <p>
-        <a href="mail_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/mail_creator.php" class="btn btn-primary btn-lg">
           <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Création de boites
         </a>
-        <a href="redirection_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/redirection_creator.php" class="btn btn-primary btn-lg">
           <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Création de redirections
         </a>
-        <a href="imapCopy_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/imapCopy_creator.php" class="btn btn-primary btn-lg">
           <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Copie de boites IMAP
         </a>
       </p>
