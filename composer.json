@@ -1,10 +1,6 @@
 {
     "name": "vendredi3/ovh-api-mail-account-wizard",
     "description": "Using OVH API to create massively emails account, redirections, and copy imap account into another",
-    "keywords":["ovh","api","email"],
-    "type":"library",
-    "homepage": "https://github.com/Vendredi3/ovh-api-mail-account-wizard",
-    "license":"Apache-2.0",
     "authors":[
         {
             "name":"Arnaud Beziat",
