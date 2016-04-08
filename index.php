@@ -1,5 +1,10 @@
 <?php
 require_once( __DIR__ .'/config.php');
+  $applicationKeyError = $applicationKey == "your_app_key" ? true : false;
+	$applicationSecretError = $applicationSecret == "your_app_secret" ? true : false;
+	$consumer_keyError = $consumer_key == "your_consumer_key" ? true : false;
+  $domainError = $domain == 'yourdomain.com' ? true : false;
+  $error = ($applicationKeyError || $applicationSecretError || $consumer_keyError || $domainError) ? true : false;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,17 +28,22 @@ require_once( __DIR__ .'/config.php');
       <h1>
         Comptes Emails <?php echo $domain;?> OVH
       </h1>
+      <?php if($error){ ?>
+        <div class='alert alert-danger' role='alert'>ATTENTION : 
+          Vous devez modifier le contenu du fichier config.php avec vos informations
+        </div>
+      <?php } ?>
       <p>
         Gestion de comptes Email et redirections <?php echo $domain;?> en masse (API OVH)
       </p>
       <p>
-        <a href="src/mail_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/mail_creator.php" class="btn btn-primary btn-lg" <?php if($error){ echo "disabled"; }?>>
           <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Création de boites
         </a>
-        <a href="src/redirection_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/redirection_creator.php" class="btn btn-primary btn-lg" <?php if($error){ echo "disabled"; }?>>
           <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Création de redirections
         </a>
-        <a href="src/imapCopy_creator.php" class="btn btn-primary btn-lg">
+        <a href="src/imapCopy_creator.php" class="btn btn-primary btn-lg" <?php if($error){ echo "disabled"; }?>>
           <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Copie de boites IMAP
         </a>
       </p>
