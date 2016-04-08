@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "ovh/ovh": "dev-master"
+        "ovh/ovh": "master"
     }
 }
