@@ -1,6 +1,15 @@
 {
-    "name": "Mail account generator",
-    "description": "Création de compte emails ovh en masse",
+    "name": "Vendredi3/ovh-api-mail-account-wizard",
+    "description": "Using OVH API to create massively emails account, redirections, and copy imap account into another",
+    "keywords":["ovh","api","email"],
+    "type":"library",
+    "license":"Apache-2.0",
+    "authors":[
+        {
+            "name":"Arnaud Beziat",
+            "email":"arnaud@vendredi3.com"
+        }
+    ],
     "require": {
         "ovh/ovh": "dev-master"
     }
