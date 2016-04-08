@@ -9,3 +9,7 @@ You need to get 3 API Keys from OVH :
 Go to https://eu.api.ovh.com/createToken/ to generate them
 
 When you're done, modify the [config.php](config.php) file accordingly (you need to add your domain too)
+
+# Dependencies
+
+[ovh/php-ovh](https://github.com/ovh/php-ovh)
