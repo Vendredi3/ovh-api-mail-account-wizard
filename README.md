@@ -13,3 +13,5 @@ When you're done, modify the [config.php](config.php) file accordingly (you need
 # Dependencies
 
 [ovh/php-ovh](https://github.com/ovh/php-ovh)
+
+After downloading Zip file, run `php composer.phar install` and it will install the dependencies in the `vendor/` directory
